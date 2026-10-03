@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep this brochure-style experience on the home route with in-page section links; the current scope is a single business site without separate content pages.
+- Store the site's visual palette and editorial effects in global semantic CSS tokens; it keeps brand styling consistent across sections.
