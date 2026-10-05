@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T12:28:35.410514+00:00",
+  "generated_at": "2026-10-05T12:35:57.794202+00:00",
   "files": [
     {
       "path": "AGENTS.md",
@@ -38,6 +38,10 @@
       "bytes": 124
     },
     {
+      "path": ".lovasiri/sync.json",
+      "bytes": 80
+    },
+    {
       "path": "src/routeTree.gen.ts",
       "bytes": 1797
     },
@@ -63,7 +67,7 @@
     },
     {
       "path": "src/lib/error-page.ts",
-      "bytes": 1371
+      "bytes": 1407
     },
     {
       "path": "src/lib/lovable-error-reporting.ts",
@@ -79,7 +83,7 @@
     },
     {
       "path": "src/routes/__root.tsx",
-      "bytes": 4414
+      "bytes": 4383
     },
     {
       "path": "src/routes/README.md",
@@ -505,11 +509,7 @@
     },
     {
       "source": "src/routes/__root.tsx",
-      "target": "../styles.css?url"
-    },
-    {
-      "source": "src/routes/__root.tsx",
-      "target": "../lib/lovable-error-reporting"
+      "target": "@/lib/lovable-error-reporting"
     },
     {
       "source": "src/routes/index.tsx",
