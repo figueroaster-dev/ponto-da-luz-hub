@@ -17,7 +17,7 @@ import trilhoOpus from "@/assets/catalog/trilho-opus.asset.json";
 const categories = ["Todos", "Pendentes", "Arandelas", "Área externa", "Iluminação técnica"] as const;
 type Category = Exclude<(typeof categories)[number], "Todos">;
 
-const products: { name: string; category: Category; brand: string; collection: string; code: string; detail: string; image: string; imagePosition?: string }[] = [
+const products: { name: string; category: Category; brand: string; collection: string; code: string; detail: string; image: string }[] = [
   { name: "Alle", category: "Pendentes", brand: "Bella Iluminação", collection: "Tangram", code: "ALL1PD01TR10", detail: "Vidro e metal · 6 lâmpadas E27", image: alle.url },
   { name: "Freddo", category: "Pendentes", brand: "Bella Iluminação", collection: "Sublime", code: "FRE1PD01TR10", detail: "LED integrado · 30W · 3000K", image: freddo.url },
   { name: "Casulo", category: "Pendentes", brand: "Bella Iluminação", collection: "Sublime", code: "CAS1PD01TR10", detail: "Vidro texturizado · LED 7W · 3000K", image: casulo.url },
