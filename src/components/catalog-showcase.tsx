@@ -51,7 +51,7 @@ export function CatalogShowcase() {
         {visible.map(product => {
           const message = `Olá! Tenho interesse no produto ${product.name} (${product.brand}), código ${product.code}. Poderiam informar disponibilidade, preço e prazo?`;
           return <article key={product.code} className="group flex min-w-0 flex-col">
-            <div className="aspect-[4/4.5] overflow-hidden bg-paper"><img src={product.image} alt={`${product.name}, ${product.category.toLowerCase()} da ${product.brand}`} loading="lazy" className="size-full object-cover transition-transform duration-500 group-hover:scale-[1.035]" style={product.imagePosition ? { objectPosition: product.imagePosition } : undefined} /></div>
+            <div className="aspect-[4/4.5] overflow-hidden bg-paper"><img src={product.image} alt={`${product.name}, ${product.category.toLowerCase()} da ${product.brand}`} loading="lazy" className="size-full object-contain transition-transform duration-500 group-hover:scale-[1.035]" /></div>
             <div className="flex grow flex-col border-b border-border py-5">
               <p className="mb-2 text-[10px] font-bold uppercase tracking-[.15em] text-primary">{product.brand} / {product.collection}</p>
               <h3 className="font-display text-[32px] leading-none">{product.name}</h3>
