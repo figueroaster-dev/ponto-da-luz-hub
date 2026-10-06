@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T12:35:57.794202+00:00",
+  "generated_at": "2026-10-06T00:23:45.419121+00:00",
   "files": [
     {
       "path": "AGENTS.md",
@@ -27,7 +27,7 @@
     },
     {
       "path": "package.json",
-      "bytes": 3129
+      "bytes": 3128
     },
     {
       "path": "components.json",
