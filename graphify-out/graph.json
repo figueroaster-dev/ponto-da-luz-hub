@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-06T00:38:48.191629+00:00",
+  "generated_at": "2026-10-07T00:16:07.006518+00:00",
   "files": [
     {
       "path": "roadmap.md",
-      "bytes": 234
+      "bytes": 339
     },
     {
       "path": "AGENTS.md",
@@ -67,7 +67,7 @@
     },
     {
       "path": "src/components/catalog-showcase.tsx",
-      "bytes": 6815
+      "bytes": 6044
     },
     {
       "path": "src/lib/error-page.ts",
@@ -96,6 +96,10 @@
     {
       "path": "src/routes/index.tsx",
       "bytes": 13672
+    },
+    {
+      "path": "src/data/catalog.ts",
+      "bytes": 4848
     },
     {
       "path": "src/hooks/use-mobile.tsx",
@@ -294,6 +298,26 @@
       "bytes": 1635
     },
     {
+      "path": "src/assets/catalog/opus-7w.asset.json",
+      "bytes": 440
+    },
+    {
+      "path": "src/assets/catalog/mirian.asset.json",
+      "bytes": 438
+    },
+    {
+      "path": "src/assets/catalog/opus-par30.asset.json",
+      "bytes": 449
+    },
+    {
+      "path": "src/assets/catalog/diana.asset.json",
+      "bytes": 435
+    },
+    {
+      "path": "src/assets/catalog/jung.asset.json",
+      "bytes": 431
+    },
+    {
       "path": "src/assets/catalog/vogel.asset.json",
       "bytes": 433
     },
@@ -306,6 +330,26 @@
       "bytes": 437
     },
     {
+      "path": "src/assets/catalog/opus-par20.asset.json",
+      "bytes": 449
+    },
+    {
+      "path": "src/assets/catalog/celine.asset.json",
+      "bytes": 438
+    },
+    {
+      "path": "src/assets/catalog/maite.asset.json",
+      "bytes": 434
+    },
+    {
+      "path": "src/assets/catalog/spot-quadrado-neo.asset.json",
+      "bytes": 471
+    },
+    {
+      "path": "src/assets/catalog/tube.asset.json",
+      "bytes": 432
+    },
+    {
       "path": "src/assets/catalog/trilho-opus.asset.json",
       "bytes": 452
     },
@@ -314,7 +358,15 @@
       "bytes": 431
     },
     {
+      "path": "src/assets/catalog/ester.asset.json",
+      "bytes": 434
+    },
+    {
       "path": "src/assets/catalog/fita-neo.asset.json",
+      "bytes": 443
+    },
+    {
+      "path": "src/assets/catalog/opus-30w.asset.json",
       "bytes": 443
     },
     {
@@ -322,24 +374,52 @@
       "bytes": 434
     },
     {
+      "path": "src/assets/catalog/atena-plafon.asset.json",
+      "bytes": 456
+    },
+    {
       "path": "src/assets/catalog/fold.asset.json",
       "bytes": 431
+    },
+    {
+      "path": "src/assets/catalog/dicroica-neo.asset.json",
+      "bytes": 454
     },
     {
       "path": "src/assets/catalog/alle.asset.json",
       "bytes": 431
     },
     {
+      "path": "src/assets/catalog/atena-pendente.asset.json",
+      "bytes": 461
+    },
+    {
       "path": "src/assets/catalog/trilho-neo.asset.json",
       "bytes": 449
+    },
+    {
+      "path": "src/assets/catalog/opus-mr16.asset.json",
+      "bytes": 446
+    },
+    {
+      "path": "src/assets/catalog/dama.asset.json",
+      "bytes": 432
     },
     {
       "path": "src/assets/catalog/kolibri.asset.json",
       "bytes": 439
     },
     {
+      "path": "src/assets/catalog/vintage-cover.asset.json",
+      "bytes": 458
+    },
+    {
       "path": "src/assets/catalog/casulo.asset.json",
       "bytes": 437
+    },
+    {
+      "path": "src/assets/catalog/spot-redondo-neo.asset.json",
+      "bytes": 467
     }
   ],
   "dependencies": [
@@ -445,51 +525,7 @@
     },
     {
       "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/alle.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/freddo.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/casulo.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/rubik.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/tako.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/fold.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/vogel.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/kolibri.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/calli.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/trilho-neo.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/fita-neo.asset.json"
-    },
-    {
-      "source": "src/components/catalog-showcase.tsx",
-      "target": "@/assets/catalog/trilho-opus.asset.json"
+      "target": "@/data/catalog"
     },
     {
       "source": "src/lib/utils.ts",
