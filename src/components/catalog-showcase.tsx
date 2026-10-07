@@ -1,57 +1,57 @@
-import { useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { useMemo, useState } from "react";
+import { ArrowUpRight, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import alle from "@/assets/catalog/alle.asset.json";
-import freddo from "@/assets/catalog/freddo.asset.json";
-import casulo from "@/assets/catalog/casulo.asset.json";
-import rubik from "@/assets/catalog/rubik.asset.json";
-import tako from "@/assets/catalog/tako.asset.json";
-import fold from "@/assets/catalog/fold.asset.json";
-import vogel from "@/assets/catalog/vogel.asset.json";
-import kolibri from "@/assets/catalog/kolibri.asset.json";
-import calli from "@/assets/catalog/calli.asset.json";
-import trilhoNeo from "@/assets/catalog/trilho-neo.asset.json";
-import fitaNeo from "@/assets/catalog/fita-neo.asset.json";
-import trilhoOpus from "@/assets/catalog/trilho-opus.asset.json";
+import { brands, categories, products } from "@/data/catalog";
 
-const categories = ["Todos", "Pendentes", "Arandelas", "Área externa", "Iluminação técnica"] as const;
-type Category = Exclude<(typeof categories)[number], "Todos">;
-
-const products: { name: string; category: Category; brand: string; collection: string; code: string; detail: string; image: string }[] = [
-  { name: "Alle", category: "Pendentes", brand: "Bella Iluminação", collection: "Tangram", code: "ALL1PD01TR10", detail: "Vidro e metal · 6 lâmpadas E27", image: alle.url },
-  { name: "Freddo", category: "Pendentes", brand: "Bella Iluminação", collection: "Sublime", code: "FRE1PD01TR10", detail: "LED integrado · 30W · 3000K", image: freddo.url },
-  { name: "Casulo", category: "Pendentes", brand: "Bella Iluminação", collection: "Sublime", code: "CAS1PD01TR10", detail: "Vidro texturizado · LED 7W · 3000K", image: casulo.url },
-  { name: "Rubik", category: "Arandelas", brand: "Bella Iluminação", collection: "LEDPRO", code: "RUB2AR01GR10", detail: "LED integrado · 2 × 12W · IP54", image: rubik.url },
-  { name: "Tako", category: "Arandelas", brand: "Bella Iluminação", collection: "LEDPRO", code: "TAK1AR01BR10", detail: "LED integrado · 10W · IP54", image: tako.url },
-  { name: "Fold", category: "Arandelas", brand: "Bella Iluminação", collection: "LEDPRO", code: "FOL1AR01PT017", detail: "LED integrado · 5W · IP65", image: fold.url },
-  { name: "Vogel 50 cm", category: "Área externa", brand: "Germany", collection: "Balizadores", code: "50200330-09", detail: "Verde jardim · soquete G9 · IP54", image: vogel.url },
-  { name: "Kolibri 70 cm", category: "Área externa", brand: "Germany", collection: "Balizadores", code: "49210330-09", detail: "Verde jardim · soquete G9 · IP54", image: kolibri.url },
-  { name: "Calli", category: "Iluminação técnica", brand: "Bella Iluminação", collection: "LEDPRO", code: "CAL1ST01PT010", detail: "Spot LED · 6W · 3000K", image: calli.url },
-  { name: "Spot Trilho Neo", category: "Iluminação técnica", brand: "Avant", collection: "Neo", code: "290964745", detail: "Preto · 20W · 1400lm", image: trilhoNeo.url },
-  { name: "Fita LED Neo", category: "Iluminação técnica", brand: "Avant", collection: "Neo", code: "290420575", detail: "5 m · 5W/m · 2700K–6500K", image: fitaNeo.url },
-  { name: "Spot de trilho", category: "Iluminação técnica", brand: "Opus LED", collection: "Pro", code: "PRO 36823", detail: "Preto · 10W · 3000K", image: trilhoOpus.url },
-];
+const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
 export function CatalogShowcase() {
-  const [category, setCategory] = useState<(typeof categories)[number]>("Todos");
-  const visible = category === "Todos" ? products : products.filter(product => product.category === category);
+  const [category, setCategory] = useState<string>("Todos");
+  const [brand, setBrand] = useState("Todas");
+  const [query, setQuery] = useState("");
+
+  const visible = useMemo(() => {
+    const q = normalize(query.trim());
+    return products.filter(item => (category === "Todos" || item.category === category) && (brand === "Todas" || item.brand === brand) && (!q || normalize(`${item.name} ${item.code} ${item.brand} ${item.collection} ${item.detail}`).includes(q)));
+  }, [category, brand, query]);
 
   return <section id="catalogo" aria-labelledby="catalog-heading" className="scroll-mt-12 border-t border-border py-24 md:py-32">
     <div className="mx-auto max-w-[1480px] px-6 md:px-12 xl:px-20">
       <div className="grid gap-6 border-b border-border pb-9 md:grid-cols-[1.3fr_.7fr] md:items-end">
-        <div><p className="mb-5 text-[11px] font-bold uppercase tracking-[.2em] text-primary">04 / Curadoria de produtos</p><h2 id="catalog-heading" className="font-display text-[clamp(48px,5vw,78px)] leading-none">Peças para <em className="font-normal">cada atmosfera.</em></h2></div>
-        <p className="max-w-sm text-[15px] leading-7 text-muted-foreground md:justify-self-end">Explore nossa seleção e envie o código da peça para consultar disponibilidade, preço e prazo.</p>
+        <div><p className="mb-5 text-[11px] font-bold uppercase tracking-[.2em] text-primary">04 / Catálogo de produtos</p><h2 id="catalog-heading" className="font-display text-[clamp(48px,5vw,78px)] leading-none">Peças para <em className="font-normal">cada atmosfera.</em></h2></div>
+        <p className="max-w-sm text-[15px] leading-7 text-muted-foreground md:justify-self-end">Busque por nome ou código e envie a peça escolhida para consultar disponibilidade, preço e prazo.</p>
       </div>
 
-      <div className="my-8 flex flex-wrap gap-x-7 gap-y-3" aria-label="Filtrar produtos por tipo">
-        {categories.map(item => <Button key={item} type="button" variant="ghost" onClick={() => setCategory(item)} aria-pressed={category === item} className={`h-auto rounded-none border-b px-0 py-2 text-xs font-semibold uppercase tracking-[.12em] hover:bg-transparent ${category === item ? "border-primary text-primary" : "border-transparent text-muted-foreground hover:border-border hover:text-foreground"}`}>{item}</Button>)}
+      <div className="mt-8 grid gap-4 md:grid-cols-[1fr_240px]">
+        <label className="flex h-12 items-center gap-3 border border-border bg-card px-4 focus-within:border-ring">
+          <Search className="size-4 text-muted-foreground" aria-hidden="true" />
+          <span className="sr-only">Buscar produto</span>
+          <input type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="Buscar por nome, código ou marca" className="h-full w-full bg-transparent text-sm outline-none placeholder:text-muted-foreground" />
+        </label>
+        <label className="flex h-12 items-center border border-border bg-card px-4">
+          <span className="sr-only">Filtrar por marca</span>
+          <select value={brand} onChange={e => setBrand(e.target.value)} className="h-full w-full bg-transparent text-sm outline-none">
+            <option value="Todas">Todas as marcas</option>
+            {brands.map(item => <option key={item} value={item}>{item}</option>)}
+          </select>
+        </label>
       </div>
 
+      <div className="my-7 flex flex-wrap gap-x-7 gap-y-3" aria-label="Filtrar produtos por tipo">
+        {["Todos", ...categories].map(item => <Button key={item} type="button" variant="ghost" onClick={() => setCategory(item)} aria-pressed={category === item} className={`h-auto rounded-none border-b px-0 py-2 text-xs font-semibold uppercase tracking-[.12em] hover:bg-transparent ${category === item ? "border-primary text-primary" : "border-transparent text-muted-foreground hover:border-border hover:text-foreground"}`}>{item}</Button>)}
+      </div>
+
+      <p className="mb-8 text-xs uppercase tracking-[.12em] text-muted-foreground" aria-live="polite">{visible.length} {visible.length === 1 ? "produto" : "produtos"}</p>
+
+      {visible.length === 0 ? <div className="border border-border bg-paper p-10 text-center"><p className="font-display text-3xl">Nenhuma peça encontrada.</p><p className="mt-3 text-sm text-muted-foreground">Tente outro termo ou fale conosco para encontrarmos a opção ideal.</p><Button type="button" variant="outline" className="mt-6" onClick={() => { setQuery(""); setBrand("Todas"); setCategory("Todos"); }}>Limpar filtros</Button></div> :
       <div className="grid gap-x-5 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map(product => {
           const message = `Olá! Tenho interesse no produto ${product.name} (${product.brand}), código ${product.code}. Poderiam informar disponibilidade, preço e prazo?`;
           return <article key={product.code} className="group flex min-w-0 flex-col">
-            <div className="aspect-[4/4.5] overflow-hidden bg-paper"><img src={product.image} alt={`${product.name}, ${product.category.toLowerCase()} da ${product.brand}`} loading="lazy" className="size-full object-contain transition-transform duration-500 group-hover:scale-[1.035]" /></div>
+            <div className="relative aspect-[4/4.5] overflow-hidden bg-paper">
+              <img src={product.image} alt={`${product.name}, ${product.category.toLowerCase()} da ${product.brand}`} loading="lazy" className="size-full object-contain transition-transform duration-500 group-hover:scale-[1.035]" />
+              {product.featured && <span className="absolute left-3 top-3 bg-dark px-2.5 py-1 text-[9px] font-bold uppercase tracking-[.15em] text-gold">Destaque</span>}
+            </div>
             <div className="flex grow flex-col border-b border-border py-5">
               <p className="mb-2 text-[10px] font-bold uppercase tracking-[.15em] text-primary">{product.brand} / {product.collection}</p>
               <h3 className="font-display text-[32px] leading-none">{product.name}</h3>
@@ -61,7 +61,7 @@ export function CatalogShowcase() {
             </div>
           </article>;
         })}
-      </div>
+      </div>}
       <p className="mt-10 text-xs leading-6 text-muted-foreground">Seleção dos catálogos das marcas parceiras. Imagens ilustrativas; confirme acabamento, disponibilidade, preço e prazo em nosso atendimento.</p>
     </div>
   </section>;
