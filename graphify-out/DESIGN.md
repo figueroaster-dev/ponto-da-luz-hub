@@ -1,6 +1,6 @@
 # Design system
 
-Generated: 2026-10-07T23:16:19.232577+00:00
+Generated: 2026-10-07T23:32:17.378524+00:00
 
 ## Tokens
 - --font-sans: "DM Sans", sans-serif (src/styles.css)

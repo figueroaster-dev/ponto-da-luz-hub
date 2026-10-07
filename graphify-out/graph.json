@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:16:19.232577+00:00",
+  "generated_at": "2026-10-07T23:32:17.378524+00:00",
   "files": [
     {
       "path": "roadmap.md",
@@ -67,7 +67,7 @@
     },
     {
       "path": "src/components/catalog-showcase.tsx",
-      "bytes": 6044
+      "bytes": 6291
     },
     {
       "path": "src/lib/error-page.ts",
@@ -86,6 +86,10 @@
       "bytes": 169
     },
     {
+      "path": "src/routes/produto.$id.tsx",
+      "bytes": 3910
+    },
+    {
       "path": "src/routes/__root.tsx",
       "bytes": 4383
     },
@@ -99,7 +103,7 @@
     },
     {
       "path": "src/data/catalog.ts",
-      "bytes": 3517
+      "bytes": 3996
     },
     {
       "path": "src/hooks/use-mobile.tsx",
@@ -517,6 +521,10 @@
     },
     {
       "source": "src/components/catalog-showcase.tsx",
+      "target": "@tanstack/react-router"
+    },
+    {
+      "source": "src/components/catalog-showcase.tsx",
       "target": "lucide-react"
     },
     {
@@ -534,6 +542,22 @@
     {
       "source": "src/lib/utils.ts",
       "target": "tailwind-merge"
+    },
+    {
+      "source": "src/routes/produto.$id.tsx",
+      "target": "@tanstack/react-router"
+    },
+    {
+      "source": "src/routes/produto.$id.tsx",
+      "target": "lucide-react"
+    },
+    {
+      "source": "src/routes/produto.$id.tsx",
+      "target": "@/components/ui/button"
+    },
+    {
+      "source": "src/routes/produto.$id.tsx",
+      "target": "@/data/catalog"
     },
     {
       "source": "src/routes/__root.tsx",
