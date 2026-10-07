@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T00:16:07.006518+00:00",
+  "generated_at": "2026-10-07T16:50:54.813171+00:00",
   "files": [
     {
       "path": "roadmap.md",
@@ -99,7 +99,7 @@
     },
     {
       "path": "src/data/catalog.ts",
-      "bytes": 4848
+      "bytes": 5260
     },
     {
       "path": "src/hooks/use-mobile.tsx",
