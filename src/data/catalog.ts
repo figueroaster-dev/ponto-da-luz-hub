@@ -1,7 +1,7 @@
 const assets = import.meta.glob<{ url: string }>("../assets/catalog/*.asset.json", { eager: true, import: "default" });
 const img = (slug: string) => assets[`../assets/catalog/${slug}.asset.json`]?.url ?? "";
 
-export const categories = ["Pendentes", "Arandelas", "Plafons", "Área externa", "Iluminação técnica"] as const;
+export const categories = ["Pendentes", "Arandelas", "Plafons", "Área externa", "Iluminação técnica", "Perfis", "Sistema Magnético"] as const;
 export type Category = (typeof categories)[number];
 
 export type Product = { name: string; category: Category; brand: string; collection: string; code: string; detail: string; image: string; featured?: boolean };
@@ -41,6 +41,9 @@ export const products: Product[] = [
   p("Dicróica Neo", "Iluminação técnica", "Avant", "Neo", "290740079", "Inteligente · 5W · 450lm · 2700K–6500K", "dicroica-neo"),
   p("Spot Redondo Neo", "Iluminação técnica", "Avant", "Neo", "290650071", "Inteligente · 5W · 350lm · RGB", "spot-redondo-neo"),
   p("Spot Quadrado Neo", "Iluminação técnica", "Avant", "Neo", "290660070", "Inteligente · 5W · 350lm · RGB", "spot-quadrado-neo"),
+  p("Perfil Linear Neo", "Perfis", "Mister LED", "Neo", "ML-P-NEO", "Alumínio preto · Para fita LED", "fita-neo", true),
+  p("Módulo Magnético Fold", "Sistema Magnético", "Mister LED", "Fold", "ML-M-FOLD", "LED 12W · Orientável", "fold", true),
+  p("Módulo Magnético Tube", "Sistema Magnético", "Mister LED", "Tube", "ML-M-TUBE", "LED 7W · Luz pontual", "tube", true),
 ];
 
 export const brands = [...new Set(products.map(item => item.brand))].sort();
