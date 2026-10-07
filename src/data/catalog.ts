@@ -31,6 +31,7 @@ export const products: Product[] = [
   p("Arandela Jung", "Área externa", "Germany", "Arandelas", "52100102-16", "Preto fosco · luz indireta", "jung"),
   p("Módulo Magnético Fold", "Sistema Magnético", "Mister LED", "Fold", "ML-M-FOLD", "LED 12W · Orientável", "fold", true),
   p("Módulo Magnético Tube", "Sistema Magnético", "Mister LED", "Tube", "ML-M-TUBE", "LED 7W · Luz pontual", "tube", true),
+  { name: "GEO SLED 6131 Texturizado", category: "Arandelas", brand: "Mister LED", collection: "Interno", code: "GEO-6131-TEX", detail: "Aplicação: Alvenaria, Madeira e Jardim · Ótica: PMMA · Grau de Proteção: IP65 · Fixação: Parafuso · Material: Cimento · Fonte de Alimentação: Bivolt · Peso: 0,645 Kg", image: "https://project--98ca8037-882c-4cdf-9ed6-99ba5eaa409e-dev.lovable.app/api/public/ext-asset?id=2aa0a028-8a2f-4d48-b168-312aebe9ee98", featured: true },
 ];
 
 export const brands = [...new Set(products.map(item => item.brand))].sort();

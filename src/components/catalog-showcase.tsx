@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { brands, categories, products } from "@/data/catalog";
@@ -47,19 +48,21 @@ export function CatalogShowcase() {
       <div className="grid gap-x-5 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map(product => {
           const message = `Olá! Tenho interesse no produto ${product.name} (${product.brand}), código ${product.code}. Poderiam informar disponibilidade, preço e prazo?`;
-          return <article key={product.code} className="group flex min-w-0 flex-col">
-            <div className="relative aspect-[4/4.5] overflow-hidden bg-paper">
+          return <div key={product.code} className="group flex min-w-0 flex-col">
+            <Link to="/produto/$id" params={{ id: product.code }} className="relative aspect-[4/4.5] overflow-hidden bg-paper block">
               <img src={product.image} alt={`${product.name}, ${product.category.toLowerCase()} da ${product.brand}`} loading="lazy" className="size-full object-contain transition-transform duration-500 group-hover:scale-[1.035]" />
               {product.featured && <span className="absolute left-3 top-3 bg-dark px-2.5 py-1 text-[9px] font-bold uppercase tracking-[.15em] text-gold">Destaque</span>}
-            </div>
+            </Link>
             <div className="flex grow flex-col border-b border-border py-5">
               <p className="mb-2 text-[10px] font-bold uppercase tracking-[.15em] text-primary">{product.brand} / {product.collection}</p>
-              <h3 className="font-display text-[32px] leading-none">{product.name}</h3>
+              <Link to="/produto/$id" params={{ id: product.code }} className="outline-none hover:text-gold transition-colors">
+                <h3 className="font-display text-[32px] leading-none">{product.name}</h3>
+              </Link>
               <p className="mt-3 text-sm text-muted-foreground">{product.detail}</p>
               <p className="mt-2 text-xs text-muted-foreground">Cód. <span className="font-semibold text-foreground">{product.code}</span></p>
               <a href={`https://wa.me/553194493666?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer" aria-label={`Consultar ${product.name}, código ${product.code}, pelo WhatsApp`} className="mt-auto inline-flex items-center gap-2 pt-6 text-[11px] font-bold uppercase tracking-[.1em] text-primary transition-colors hover:text-muted-foreground">Consultar pelo WhatsApp <ArrowUpRight className="size-4" /></a>
             </div>
-          </article>;
+          </div>;
         })}
       </div>}
       <p className="mt-10 text-xs leading-6 text-muted-foreground">Seleção dos catálogos das marcas parceiras. Imagens ilustrativas; confirme acabamento, disponibilidade, preço e prazo em nosso atendimento.</p>
