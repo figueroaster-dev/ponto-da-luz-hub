@@ -1,7 +1,7 @@
 const assets = import.meta.glob<{ url: string }>("../assets/catalog/*.asset.json", { eager: true, import: "default" });
 const img = (slug: string) => assets[`../assets/catalog/${slug}.asset.json`]?.url ?? "";
 
-export const categories = ["Pendentes", "Arandelas", "Plafons", "Área externa", "Perfis", "Sistema Magnético"] as const;
+export const categories = ["Pendentes", "Arandelas", "Plafons", "Área externa", "Sistema Magnético"] as const;
 export type Category = (typeof categories)[number];
 
 export type Product = { name: string; category: Category; brand: string; collection: string; code: string; detail: string; image: string; featured?: boolean };
@@ -29,7 +29,6 @@ export const products: Product[] = [
   p("Plafon LED Atena", "Plafons", "Blumenau", "Atena", "86743104", "Branco · LED 18W · 1400lm · 3000K", "atena-plafon"),
   p("Plafon LED Ester", "Plafons", "Blumenau", "Ester", "86731030", "Acrílico texturizado · LED 24W · 1900lm", "ester"),
   p("Arandela Jung", "Área externa", "Germany", "Arandelas", "52100102-16", "Preto fosco · luz indireta", "jung"),
-  p("Perfil Linear Neo", "Perfis", "Mister LED", "Neo", "ML-P-NEO", "Alumínio preto · Para fita LED", "fita-neo", true),
   p("Módulo Magnético Fold", "Sistema Magnético", "Mister LED", "Fold", "ML-M-FOLD", "LED 12W · Orientável", "fold", true),
   p("Módulo Magnético Tube", "Sistema Magnético", "Mister LED", "Tube", "ML-M-TUBE", "LED 7W · Luz pontual", "tube", true),
 ];
