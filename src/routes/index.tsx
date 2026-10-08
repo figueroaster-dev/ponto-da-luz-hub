@@ -4,7 +4,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight, MapPin, Menu, Phone, X } from "luc
 import { Button } from "@/components/ui/button";
 import { CatalogShowcase } from "@/components/catalog-showcase";
 
-const heroImage = "https://images.unsplash.com/photo-1540932239986-30128078f3c5?q=80&w=1600&auto=format&fit=crop";
+const heroImage = "/assets/hero-lighting-Cpa9EZBt.jpg";
 const residentialImage = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop";
 const commercialImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop";
 
@@ -17,8 +17,6 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Iluminação residencial, comercial e corporativa em Belo Horizonte. A luz certa transforma tudo." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: heroImage },
-      { name: "twitter:image", content: heroImage },
     ],
   }),
   component: Home,
@@ -93,8 +91,8 @@ function Home() {
     </header>
 
     <section aria-labelledby="hero-heading" className="relative flex min-h-[90vh] items-center text-dark-foreground bg-dark">
-      <img src={heroImage} alt="Projeto luminotécnico Ponto da Luz" className="absolute inset-0 size-full object-cover opacity-70" />
-      <div className="absolute inset-0 bg-dark/60" />
+      <img src={heroImage} alt="Projeto luminotécnico Ponto da Luz" className="absolute inset-0 size-full object-cover" />
+      <div className="absolute inset-0 hero-shade" />
       <div className="relative z-10 mx-auto w-full max-w-[1480px] px-6 pt-20 md:px-12 xl:px-20">
         <div className="max-w-2xl">
           <div className="mb-6 flex items-center gap-3 text-gold"><span className="h-px w-8 bg-gold" /><span className="text-xs font-bold uppercase tracking-widest">Iluminação & projetos</span></div>
