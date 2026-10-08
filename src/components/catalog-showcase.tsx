@@ -25,10 +25,10 @@ export function CatalogShowcase() {
       </div>
 
       <div className="mt-8 flex flex-wrap items-center gap-4">
-        <label className="flex h-12 min-w-0 flex-1 items-center gap-3 border border-border bg-card px-4 focus-within:border-ring">
+        <label className="flex h-12 min-w-0 flex-1 basis-full items-center gap-3 border border-border bg-card px-4 focus-within:border-ring sm:basis-0">
           <Search className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
           <span className="sr-only">Buscar produto</span>
-          <input type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="Buscar por modelo ou código" className="h-full w-full min-w-0 bg-transparent text-sm outline-none placeholder:text-muted-foreground" />
+          <input type="search" value={query} onChange={e => setQuery(e.target.value)} placeholder="Buscar por modelo ou código" className="h-full w-full min-w-0 bg-transparent text-sm outline-none placeholder:text-muted-foreground [&::-webkit-search-cancel-button]:appearance-none" />
           {query && <Button type="button" size="icon" variant="ghost" onClick={() => setQuery("")} aria-label="Limpar busca" title="Limpar busca" className="size-8 shrink-0"><X /></Button>}
         </label>
         <p className="text-xs text-muted-foreground" aria-live="polite" aria-atomic="true">{visible.length} de {products.length} produtos</p>
