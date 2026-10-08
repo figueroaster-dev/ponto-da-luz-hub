@@ -17,6 +17,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Iluminação residencial, comercial e corporativa em Belo Horizonte. A luz certa transforma tudo." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: heroImage },
+      { name: "twitter:image", content: heroImage },
     ],
   }),
   component: Home,
