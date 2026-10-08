@@ -27,7 +27,7 @@ export function extractCodes(name: string): string[] {
 }
 
 export const products: Product[] = entries.map(entry => {
-  const line = catalogLines.find(item => item.match.test(entry.name)) ?? catalogLines[catalogLines.length - 1];
+  const line = catalogLines.find(item => item.match.test(entry.name)) ?? catalogLines[10];
   const codes = extractCodes(entry.name);
   return { id: entry.id, name: entry.name, category: line.label, brand: "Mister LED", collection: line.label, code: codes.join(" / "), codes, detail: "", line: line.id, image: assets[`../assets/catalog-led/${entry.imageSlug}.asset.json`]?.url ?? "" };
 });
