@@ -12,3 +12,4 @@
 - Keep this brochure-style experience on the home route with in-page section links; the current scope is a single business site without separate content pages.
 - Store the site's visual palette and editorial effects in global semantic CSS tokens; it keeps brand styling consistent across sections.
 - Keep catalog entries in a browser-safe data module with stable entry IDs independent of manufacturer codes, because variants can share codes; source product photos through CDN asset pointers and never execute imported HTML scripts.
+- Keep home media constants in a browser-safe data module rather than the route module so automatic route splitting always imports stable exports.
