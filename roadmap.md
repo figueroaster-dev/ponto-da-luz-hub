@@ -1,7 +1,6 @@
-# Catálogo híbrido
+# Catálogo do HTML aprovado
 
-- [x] Selecionar e conferir 20 novos produtos populares
-- [x] Preparar imagens e dados do primeiro lote
-- [x] Adicionar busca e filtros por categoria e marca
-- [ ] Conferir visual e links no computador e celular
-- [ ] Próximo: disponibilizar PDFs completos por fabricante e novos lotes (aguarda escolha do usuário)
+- [ ] Substituir os dados anteriores pelos produtos do HTML, preservando nomes e códigos.
+- [ ] Importar fotos disponíveis e apresentar peças sem foto sem imagens inventadas.
+- [ ] Adaptar busca, linhas e consulta pelo WhatsApp ao layout existente.
+- [ ] Verificar catálogo, imagens, filtros e links em telas largas e estreitas.
