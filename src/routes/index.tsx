@@ -4,7 +4,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight, MapPin, Menu, Phone, X } from "luc
 import { Button } from "@/components/ui/button";
 import { CatalogShowcase } from "@/components/catalog-showcase";
 
-const heroImage = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop";
+const heroImage = "https://images.unsplash.com/photo-1540932239986-30128078f3c5?q=80&w=1600&auto=format&fit=crop";
 const residentialImage = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop";
 const commercialImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop";
 
@@ -90,20 +90,21 @@ function Home() {
       </nav>}
     </header>
 
-    <section aria-labelledby="hero-heading" className="relative flex min-h-[680px] h-[88svh] max-h-[920px] items-center text-dark-foreground bg-dark">
-      <img src={heroImage} alt="Ambiente contemporâneo com iluminação indireta e pendentes acesos" width={1600} height={1008} fetchPriority="high" className="absolute inset-0 size-full object-cover object-[60%_center]" />
-      <div className="absolute inset-0 bg-dark/40 lg:bg-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/60 to-transparent lg:bg-gradient-to-r lg:from-dark/95 lg:via-dark/70 lg:to-transparent" />
+    <section aria-labelledby="hero-heading" className="relative flex min-h-[90vh] items-center text-dark-foreground bg-dark">
+      <img src={heroImage} alt="Projeto luminotécnico Ponto da Luz" className="absolute inset-0 size-full object-cover opacity-70" />
+      <div className="absolute inset-0 bg-dark/60" />
       <div className="relative z-10 mx-auto w-full max-w-[1480px] px-6 pt-20 md:px-12 xl:px-20">
-        <div className="max-w-[720px]">
-          <div className="mb-7 flex items-center gap-3 text-gold"><span className="h-px w-9 bg-gold" /><span className="text-[11px] font-bold uppercase tracking-[.24em]">Iluminação & projetos</span></div>
-          <h1 id="hero-heading" className="font-display text-[clamp(68px,8vw,130px)] font-medium leading-[.82]">Ponto<br />da <em className="font-normal text-gold">Luz.</em></h1>
-          <p className="mt-9 max-w-[460px] text-base leading-relaxed text-dark-foreground/85 md:text-lg">A luz certa transforma espaços, cria atmosferas e revela novas formas de viver.</p>
-          <div className="mt-9 flex flex-wrap items-center gap-5"><Button variant="hero" size="editorial" asChild><a href="#solucoes">Explore nossas soluções <ArrowUpRight /></a></Button><a href="#sobre" className="inline-flex items-center gap-2 text-[12px] font-bold uppercase tracking-[.14em] transition-colors hover:text-gold">Conheça a Ponto da Luz <ArrowRight className="size-4" /></a></div>
+        <div className="max-w-2xl">
+          <div className="mb-6 flex items-center gap-3 text-gold"><span className="h-px w-8 bg-gold" /><span className="text-xs font-bold uppercase tracking-widest">Iluminação & projetos</span></div>
+          <h1 id="hero-heading" className="font-display text-[clamp(60px,8vw,100px)] font-medium leading-none">Ponto<br />da <em className="font-normal text-gold">Luz.</em></h1>
+          <p className="mt-6 max-w-md text-lg leading-relaxed text-dark-foreground/90 md:text-xl">A luz certa transforma espaços, cria atmosferas e revela novas formas de viver.</p>
+          <div className="mt-10 flex flex-wrap items-center gap-6">
+            <Button variant="hero" size="lg" asChild><a href="#solucoes">Explore nossas soluções <ArrowUpRight className="ml-2" /></a></Button>
+            <a href="#sobre" className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest transition-colors hover:text-gold">Conheça a Ponto da Luz <ArrowRight className="size-4" /></a>
+          </div>
         </div>
       </div>
-      <a href="#sobre" aria-label="Rolar para conhecer a Ponto da Luz" className="absolute bottom-8 left-6 z-10 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[.2em] md:left-12 xl:left-20">Descubra mais <ArrowDown className="size-4" /></a>
-      <div className="absolute bottom-0 right-0 z-10 hidden border-t border-l border-dark-foreground/25 px-8 py-5 text-[10px] font-semibold uppercase tracking-[.2em] md:block">Belo Horizonte · MG</div>
+      <a href="#sobre" className="absolute bottom-10 left-6 z-10 flex animate-bounce items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold md:left-12 xl:left-20">Descubra <ArrowDown className="size-4" /></a>
     </section>
 
     <section id="sobre" className="scroll-mt-12 border-b border-border py-24 md:py-36">
