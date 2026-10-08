@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T00:51:16.037819+00:00",
+  "generated_at": "2026-10-08T00:55:57.241302+00:00",
   "files": [
     {
       "path": "roadmap.md",
@@ -90,6 +90,10 @@
       "bytes": 169
     },
     {
+      "path": "src/assets/hero-lighting.png.asset.json",
+      "bytes": 459
+    },
+    {
       "path": "src/routes/produto.$id.tsx",
       "bytes": 4710
     },
@@ -115,7 +119,7 @@
     },
     {
       "path": "src/data/home-media.ts",
-      "bytes": 399
+      "bytes": 440
     },
     {
       "path": "src/hooks/use-mobile.tsx",
@@ -1570,6 +1574,10 @@
     {
       "source": "src/data/catalog.ts",
       "target": "./catalog-led.json"
+    },
+    {
+      "source": "src/data/home-media.ts",
+      "target": "@/assets/hero-lighting.png.asset.json"
     },
     {
       "source": "src/hooks/use-mobile.tsx",
