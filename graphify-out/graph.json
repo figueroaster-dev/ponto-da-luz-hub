@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:32:17.378524+00:00",
+  "generated_at": "2026-10-08T00:08:09.282539+00:00",
   "files": [
     {
       "path": "roadmap.md",
@@ -99,7 +99,7 @@
     },
     {
       "path": "src/routes/index.tsx",
-      "bytes": 13672
+      "bytes": 17115
     },
     {
       "path": "src/data/catalog.ts",
@@ -594,18 +594,6 @@
     {
       "source": "src/routes/index.tsx",
       "target": "@/components/catalog-showcase"
-    },
-    {
-      "source": "src/routes/index.tsx",
-      "target": "@/assets/hero-lighting.jpg"
-    },
-    {
-      "source": "src/routes/index.tsx",
-      "target": "@/assets/residential-lighting.jpg"
-    },
-    {
-      "source": "src/routes/index.tsx",
-      "target": "@/assets/commercial-lighting.jpg"
     },
     {
       "source": "src/hooks/use-mobile.tsx",
