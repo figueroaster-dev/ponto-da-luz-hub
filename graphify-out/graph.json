@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-08T00:17:55.949546+00:00",
+  "generated_at": "2026-10-08T00:28:25.672584+00:00",
   "files": [
     {
       "path": "roadmap.md",
-      "bytes": 339
+      "bytes": 473
     },
     {
       "path": "AGENTS.md",
-      "bytes": 779
+      "bytes": 1013
     },
     {
       "path": "vitest.config.ts",
@@ -47,7 +47,7 @@
     },
     {
       "path": "src/routeTree.gen.ts",
-      "bytes": 1797
+      "bytes": 2464
     },
     {
       "path": "src/styles.css",
@@ -66,8 +66,12 @@
       "bytes": 944
     },
     {
+      "path": "src/components/catalog-product-image.tsx",
+      "bytes": 671
+    },
+    {
       "path": "src/components/catalog-showcase.tsx",
-      "bytes": 6291
+      "bytes": 6289
     },
     {
       "path": "src/lib/error-page.ts",
@@ -87,7 +91,7 @@
     },
     {
       "path": "src/routes/produto.$id.tsx",
-      "bytes": 3910
+      "bytes": 4710
     },
     {
       "path": "src/routes/__root.tsx",
@@ -99,15 +103,23 @@
     },
     {
       "path": "src/routes/index.tsx",
-      "bytes": 16800
+      "bytes": 16905
+    },
+    {
+      "path": "src/data/catalog-led.json",
+      "bytes": 27795
     },
     {
       "path": "src/data/catalog.ts",
-      "bytes": 3996
+      "bytes": 3402
     },
     {
       "path": "src/hooks/use-mobile.tsx",
       "bytes": 576
+    },
+    {
+      "path": "src/test/catalog.test.ts",
+      "bytes": 1451
     },
     {
       "path": "src/test/app-routing.test.tsx",
@@ -302,6 +314,938 @@
       "bytes": 1635
     },
     {
+      "path": "src/assets/catalog-led/1b4b2d5e8abe0d49.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/f99d1829600b0862.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/c0c04061c162eae4.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/c20c7dd8ebeda503.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/8d9b97cac417c609.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/180b76e7bcff1e8b.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/f2d9b094dc5f3d01.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/d216a5b76c7a6f6f.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/3477c493e9e6c314.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/3b7b0311b1a98842.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/b73c83187d66c7fd.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1d1451fd7e690a73.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/4ce702d41c467397.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/e014d583928d715e.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/1c74726f14af2021.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/859798198e7174f1.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/2e7ff26aca70c493.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/a51d69e120b83206.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/d4b087d28fec3cec.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/398140c50192bcd5.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/02f3d19be7b74f76.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/9eb0c7c0baccebee.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/8ec59f2f76d51b66.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/34a72e50531b526e.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/78b54b65df1d98a6.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/dfc21692c8eeda83.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/31df63c56efa1b56.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/3455fc9ff18404b0.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/eb8401b944fe4ac1.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/49256d56fa10f830.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/66569cd008f5f419.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/acbea9956e0d9691.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/07ddd0998c42f2b1.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/123709b17ac6fad8.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/09afe2cf9f1d46f2.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/a218f50a3b91e086.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/3ff5a2f3c4e781c4.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/c77ec596533275da.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/f8175b6e449e9714.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/ed22a2a3aa7bad5d.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/cf2e4bcc8a2df65a.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/0e8b509903b83344.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/7a88bf88e62c1c05.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/448ffd2769db4b0f.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/9b5c422c3a75d1a1.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1d172d3495fd9fb2.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/cbc04e589836dfdf.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/827bfedc7c57a9a5.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/48b10ddab331390a.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/f084a9a4830dd142.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/4de452fc84f8f8dd.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/a079bec7f08ebc97.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/c6740befe9fd32db.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/1e293437b80c896e.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/a1aac1756f0fb200.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/6396e14535286e8c.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/79a44b7b3e04b84c.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/603c79a04a75980c.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/51d9186e1af541c9.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/394ce96e62e3297c.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/ce2c94aa8e70b9ea.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/97b02e1984163804.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/e96ab8dc7d5b92ea.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/7e43dd3b8a1d2d32.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/3486ae4f5fe63953.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/110dfe6e36c86dfa.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/a61189ec06e31939.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/ac55d60aa843a843.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/0fcdb250bb7fb641.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/7f99d9889a9726d9.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/51b00a0f6604088b.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/81279551a18c58dd.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/66c0133f7f71806f.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/719608347b6f34af.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/a91202ef6ac39ed3.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/14b098d6715fe3a8.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/d37e968b4ddfa497.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/17cce404d307c80d.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/fee69fae3194894d.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/1037aee6b2039c73.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/070818452bb41e76.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/ca7a2f01517098d2.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/3e65b809cbf569c2.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/96c5e3b33391d84e.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/e414ad6e148df03a.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/499e6588da256f37.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/55e40ff116304950.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/277a416554dbbefc.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/3bf093ff7d944126.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/39f2fb2ecfe6d2d8.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/452eda5704483486.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/e11b1d73c151ee5a.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/41d02b69cae739d4.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/3759c89aeb4ab47b.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/39c5013e85bb6358.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/e28c43cf618c0575.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1368cc7be8067971.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/cbab1f7aaadb2bfb.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/235a0965f3977b69.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/20802b803e958c35.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/41a0ac34d96f47d5.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/e3cd2eecd705ee72.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/09b1b6e0c53d7238.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/5c150780ca8e4f2a.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1cbcdc0b69c79f3a.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/959574947a562758.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/cc7303a3770dcaad.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/9394ab97e09b16f5.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/8217588702119672.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/5866a7cb510850ce.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/25b785ec1b758b57.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/f07b9b6683246cb2.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/442dc24a3308810f.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1fb060b987a01f6a.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/cc4d3d0b7f486e49.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/e05a647b24f19071.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/b74c353ec167e448.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1c213ddc654b7465.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/15aea1bd2ce4c54f.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/f9866c2f56346df7.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/3aebfcf3b8bfcefe.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/9438df5f6f5a17c7.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/30e5ed1343d03ec9.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1e3b6b431a0f48da.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/b5caebebc98c18c2.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/f94d6f34e9f1c2c6.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/e488f4a265333a57.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/ec8409dbd43c8412.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/37e54886c6409c54.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/30d3df7d4656be81.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/39fa3b32cdf17772.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/4f0f6d7b50f3ba00.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/cea27d9847f02808.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/64da4d615e5583db.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/6a917100861900b3.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/704c48333d1b376b.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/713a42c1b82b687a.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/7bd39ac5e9732f6d.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/a39420d506a63940.asset.json",
+      "bytes": 469
+    },
+    {
+      "path": "src/assets/catalog-led/6f7909aad6b53e95.asset.json",
+      "bytes": 470
+    },
+    {
+      "path": "src/assets/catalog-led/57205b89b8f99b3d.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/dd7e37ce969d70d8.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/2aa7aca2e819c93a.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/09028b8754d605b7.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/d108a5620420edb6.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/47f10a587fde3344.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/4598aca3eb96ece7.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/a3a6908a6601ddfe.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/4fca4f1486388f02.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/0c874bcf32218ac1.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/fb8d2fc8d679a65a.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/ca901c6f54e36225.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/9a55a4ab860d236d.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/7e3f7e2daa732a5e.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/9df24b8b38f9b474.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/2d1029d604e3626e.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/f975a404283e48ae.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/d74ad4f6a92814f1.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/64d738cd73a420de.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/947b8df2c02de9c7.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/80ff93a547ebc409.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1016391bb2e791dc.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/457ae7adcf487dd2.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/a71e2ee747fee42b.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/b5954170e16a947a.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/5e72004379303ee6.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/05dac0dbd2a0fda2.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/616a5a12312b9eaa.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/7964ed35d37493cc.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/4ce43079de7b3fae.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/065fe237e534e202.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/90836a94469162df.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/d02ed76fb48f742d.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/d4984ed33dcd93a3.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/d311b9f89f1977be.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/d78730bb05ec6b04.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/916a9f6bb3c23366.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/c8d85011b27b4034.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/58f1d89adbdd0a67.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/b44ec74c5e45f772.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/f4e3b885a034d3e1.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/b133856b284cd43a.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/3baa9695329aab5c.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/35d794a0af21fcbe.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/75cc9af2d3e0fc63.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/4e9c83de32cad3ef.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/4dbef52b73aeef67.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/6d90d395e774ad33.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/700e7f9de4b815be.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/d9a0e44ca06ff1ff.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/3a9fbd0e17ac8790.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/67dd5fc57531c837.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/b1928e1dd3dfa91c.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/2decc0957ac19be8.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/913930834e50e7eb.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1a1c789fa7ffe850.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/732da9dc8918ebb3.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/3bd0a254b5d8831b.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/2d84e0338193cbe7.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/a3ae51aaebcde614.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/442a221258911ced.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/cba7f980a21ae427.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/ff2434e74cbaf153.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/8dc122bc60004706.asset.json",
+      "bytes": 469
+    },
+    {
+      "path": "src/assets/catalog-led/295b43a44245a30e.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/dd797e7e103450f2.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/fa580f4a91fa6745.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/9481069d4503bea6.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/472156d4511f1d2f.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/eccfb247f1349d04.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/a3fce2718604ebff.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/e72e068e0174455d.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/06bd99c9a46a4136.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/df62fbb9cba9e905.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/251d41a7cc7d4566.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/15dd1074c19cdd28.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/3ef0d9d944775d55.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/709095febba11a98.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/dd6ac9b32635037c.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/f8ce7b561e73f17f.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/8d9819135a3dc259.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/4c6e98664398582f.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/bdf9bd8c94bd6047.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/402c20df2970c389.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/81fbe5886ed9f452.asset.json",
+      "bytes": 465
+    },
+    {
+      "path": "src/assets/catalog-led/b13f88a36d6c819d.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/7aa5ab9c11ea1db4.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/270532a71e148399.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/1ba286744d33ec3f.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/4de3fcc16205a6c3.asset.json",
+      "bytes": 467
+    },
+    {
+      "path": "src/assets/catalog-led/370bc10eac77a340.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/d2056614e10ca2bf.asset.json",
+      "bytes": 466
+    },
+    {
+      "path": "src/assets/catalog-led/030dbc0be36d1dd8.asset.json",
+      "bytes": 466
+    },
+    {
       "path": "src/assets/catalog/opus-7w.asset.json",
       "bytes": 440
     },
@@ -477,6 +1421,10 @@
     },
     {
       "source": "src/routeTree.gen.ts",
+      "target": "./routes/produto.$id"
+    },
+    {
+      "source": "src/routeTree.gen.ts",
       "target": "./router.tsx"
     },
     {
@@ -516,6 +1464,14 @@
       "target": "./lib/error-page"
     },
     {
+      "source": "src/components/catalog-product-image.tsx",
+      "target": "react"
+    },
+    {
+      "source": "src/components/catalog-product-image.tsx",
+      "target": "lucide-react"
+    },
+    {
       "source": "src/components/catalog-showcase.tsx",
       "target": "react"
     },
@@ -530,6 +1486,10 @@
     {
       "source": "src/components/catalog-showcase.tsx",
       "target": "@/components/ui/button"
+    },
+    {
+      "source": "src/components/catalog-showcase.tsx",
+      "target": "@/components/catalog-product-image"
     },
     {
       "source": "src/components/catalog-showcase.tsx",
@@ -554,6 +1514,10 @@
     {
       "source": "src/routes/produto.$id.tsx",
       "target": "@/components/ui/button"
+    },
+    {
+      "source": "src/routes/produto.$id.tsx",
+      "target": "@/components/catalog-product-image"
     },
     {
       "source": "src/routes/produto.$id.tsx",
@@ -596,8 +1560,20 @@
       "target": "@/components/catalog-showcase"
     },
     {
+      "source": "src/data/catalog.ts",
+      "target": "./catalog-led.json"
+    },
+    {
       "source": "src/hooks/use-mobile.tsx",
       "target": "react"
+    },
+    {
+      "source": "src/test/catalog.test.ts",
+      "target": "vitest"
+    },
+    {
+      "source": "src/test/catalog.test.ts",
+      "target": "@/data/catalog"
     },
     {
       "source": "src/test/app-routing.test.tsx",

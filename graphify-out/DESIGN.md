@@ -1,6 +1,6 @@
 # Design system
 
-Generated: 2026-10-08T00:17:55.949546+00:00
+Generated: 2026-10-08T00:28:25.672584+00:00
 
 ## Tokens
 - --font-sans: "DM Sans", sans-serif (src/styles.css)
@@ -105,6 +105,7 @@ Generated: 2026-10-08T00:17:55.949546+00:00
 - tooltip
 
 ## Project components
+- src/components/catalog-product-image.tsx
 - src/components/catalog-showcase.tsx
 - src/components/ui/accordion.tsx
 - src/components/ui/alert-dialog.tsx
