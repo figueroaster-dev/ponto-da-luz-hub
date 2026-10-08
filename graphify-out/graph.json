@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T00:28:25.672584+00:00",
+  "generated_at": "2026-10-08T00:31:03.554512+00:00",
   "files": [
     {
       "path": "roadmap.md",
@@ -103,7 +103,7 @@
     },
     {
       "path": "src/routes/index.tsx",
-      "bytes": 16905
+      "bytes": 16730
     },
     {
       "path": "src/data/catalog-led.json",
