@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T00:31:03.554512+00:00",
+  "generated_at": "2026-10-08T00:51:16.037819+00:00",
   "files": [
     {
       "path": "roadmap.md",
@@ -7,7 +7,7 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1013
+      "bytes": 1160
     },
     {
       "path": "vitest.config.ts",
@@ -103,7 +103,7 @@
     },
     {
       "path": "src/routes/index.tsx",
-      "bytes": 16730
+      "bytes": 16517
     },
     {
       "path": "src/data/catalog-led.json",
@@ -112,6 +112,10 @@
     {
       "path": "src/data/catalog.ts",
       "bytes": 3402
+    },
+    {
+      "path": "src/data/home-media.ts",
+      "bytes": 399
     },
     {
       "path": "src/hooks/use-mobile.tsx",
@@ -1558,6 +1562,10 @@
     {
       "source": "src/routes/index.tsx",
       "target": "@/components/catalog-showcase"
+    },
+    {
+      "source": "src/routes/index.tsx",
+      "target": "@/data/home-media"
     },
     {
       "source": "src/data/catalog.ts",
