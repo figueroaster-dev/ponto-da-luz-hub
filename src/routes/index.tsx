@@ -4,7 +4,7 @@ import { ArrowDown, ArrowRight, ArrowUpRight, MapPin, Menu, Phone, X } from "luc
 import { Button } from "@/components/ui/button";
 import { CatalogShowcase } from "@/components/catalog-showcase";
 
-const heroImage = "https://images.unsplash.com/photo-1565814329452-e1efa11c5e89?q=80&w=1600&auto=format&fit=crop";
+const heroImage = "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1600&auto=format&fit=crop";
 const residentialImage = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop";
 const commercialImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop";
 
@@ -90,9 +90,10 @@ function Home() {
       </nav>}
     </header>
 
-    <section aria-labelledby="hero-heading" className="relative flex min-h-[680px] h-[88svh] max-h-[920px] items-center text-dark-foreground">
+    <section aria-labelledby="hero-heading" className="relative flex min-h-[680px] h-[88svh] max-h-[920px] items-center text-dark-foreground bg-dark">
       <img src={heroImage} alt="Ambiente contemporâneo com iluminação indireta e pendentes acesos" width={1600} height={1008} fetchPriority="high" className="absolute inset-0 size-full object-cover object-[60%_center]" />
-      <div className="hero-shade absolute inset-0" />
+      <div className="absolute inset-0 bg-dark/40 lg:bg-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-dark/95 via-dark/60 to-transparent lg:bg-gradient-to-r lg:from-dark/95 lg:via-dark/70 lg:to-transparent" />
       <div className="relative z-10 mx-auto w-full max-w-[1480px] px-6 pt-20 md:px-12 xl:px-20">
         <div className="max-w-[720px]">
           <div className="mb-7 flex items-center gap-3 text-gold"><span className="h-px w-9 bg-gold" /><span className="text-[11px] font-bold uppercase tracking-[.24em]">Iluminação & projetos</span></div>
