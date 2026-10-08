@@ -3,9 +3,10 @@ import { useState } from "react";
 import { ArrowDown, ArrowRight, ArrowUpRight, MapPin, Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CatalogShowcase } from "@/components/catalog-showcase";
-import heroImage from "@/assets/hero-lighting.jpg";
-import residentialImage from "@/assets/residential-lighting.jpg";
-import commercialImage from "@/assets/commercial-lighting.jpg";
+
+const heroImage = "https://images.unsplash.com/photo-1565814329452-e1efa11c5e89?q=80&w=1600&auto=format&fit=crop";
+const residentialImage = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop";
+const commercialImage = "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -25,8 +26,37 @@ const navigation = [
   { label: "Início", href: "#inicio" },
   { label: "Sobre nós", href: "#sobre" },
   { label: "Soluções", href: "#solucoes" },
+  { label: "Serviços", href: "#servicos" },
   { label: "Catálogo", href: "#catalogo" },
   { label: "Contato", href: "#contato" },
+];
+
+const services = [
+  {
+    title: "Projetos e Soluções de Iluminação",
+    description: "Desenvolvimento de projetos luminotécnicos personalizados para atender às necessidades específicas de cada ambiente, garantindo eficiência e estética.",
+    image: "https://images.unsplash.com/photo-1540932239986-30128078f3c5?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    title: "Iluminação Residencial",
+    description: "Soluções criativas e aconchegantes para o seu lar, valorizando a arquitetura e criando atmosferas perfeitas para cada momento.",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    title: "Iluminação Comercial",
+    description: "Projetos focados em destacar produtos e criar ambientes convidativos, melhorando a experiência do cliente e impulsionando resultados.",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    title: "Iluminação Corporativa",
+    description: "Sistemas de iluminação eficientes para escritórios e espaços de trabalho, visando o conforto visual e o aumento da produtividade da equipe.",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    title: "Iluminação Industrial",
+    description: "Luminárias de alta performance e durabilidade, adequadas para galpões, fábricas e áreas industriais, em conformidade com as normas de segurança.",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop",
+  }
 ];
 
 function Wordmark({ light = false }: { light?: boolean }) {
@@ -94,11 +124,34 @@ function Home() {
       </div>
     </section>
 
-    <section className="bg-paper py-20 md:py-28"><div className="mx-auto grid max-w-[1480px] gap-10 px-6 md:grid-cols-[1fr_1fr] md:items-center md:gap-20 md:px-12 xl:px-20"><div><p className="mb-5 text-[11px] font-bold uppercase tracking-[.2em] text-primary">03 / Possibilidades</p><h2 className="font-display text-[clamp(45px,5vw,76px)] leading-[1.02]">Detalhes que fazem <em className="font-normal">toda a diferença.</em></h2></div><div className="md:border-l md:border-border md:pl-14"><p className="text-[15px] leading-8 text-muted-foreground">Fitas de LED, lâmpadas Ultra LED e Power LED: opções para compor ambientes com eficiência, qualidade e personalidade.</p><a href="#contato" className="mt-7 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[.15em] text-primary hover:text-muted-foreground">Encontre a solução ideal <ArrowUpRight className="size-4" /></a></div></div></section>
+    <section id="servicos" className="scroll-mt-12 py-24 md:py-32">
+      <div className="mx-auto max-w-[1480px] px-6 md:px-12 xl:px-20">
+        <div className="mb-12">
+          <p className="mb-5 text-[11px] font-bold uppercase tracking-[.2em] text-primary">03 / Serviços</p>
+          <h2 className="font-display text-[clamp(40px,5vw,68px)] leading-none">Nossas <em className="font-normal">especialidades.</em></h2>
+        </div>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
+            <a key={index} href="#contato" className="group flex flex-col bg-card border border-border overflow-hidden transition-colors hover:border-primary">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <img src={service.image} alt={service.title} loading="lazy" className="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              </div>
+              <div className="p-6 md:p-8 flex flex-col grow">
+                <h3 className="font-display text-2xl leading-tight mb-3 group-hover:text-gold transition-colors">{service.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground mb-6">{service.description}</p>
+                <div className="mt-auto inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.1em] text-primary transition-colors group-hover:text-muted-foreground">Saiba mais <ArrowUpRight className="size-4" /></div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-paper py-20 md:py-28"><div className="mx-auto grid max-w-[1480px] gap-10 px-6 md:grid-cols-[1fr_1fr] md:items-center md:gap-20 md:px-12 xl:px-20"><div><p className="mb-5 text-[11px] font-bold uppercase tracking-[.2em] text-primary">04 / Possibilidades</p><h2 className="font-display text-[clamp(45px,5vw,76px)] leading-[1.02]">Detalhes que fazem <em className="font-normal">toda a diferença.</em></h2></div><div className="md:border-l md:border-border md:pl-14"><p className="text-[15px] leading-8 text-muted-foreground">Fitas de LED, lâmpadas Ultra LED e Power LED: opções para compor ambientes com eficiência, qualidade e personalidade.</p><a href="#contato" className="mt-7 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[.15em] text-primary hover:text-muted-foreground">Encontre a solução ideal <ArrowUpRight className="size-4" /></a></div></div></section>
 
     <CatalogShowcase />
 
-    <section id="contato" className="scroll-mt-12 bg-dark py-24 text-dark-foreground md:py-32"><div className="mx-auto max-w-[1480px] px-6 md:px-12 xl:px-20"><p className="mb-8 text-[11px] font-bold uppercase tracking-[.2em] text-gold">05 / Contato</p><div className="grid gap-12 md:grid-cols-[1.2fr_.8fr] md:items-end"><div><h2 className="font-display text-[clamp(54px,7vw,108px)] leading-[.92]">Vamos iluminar<br /><em className="font-normal text-gold">suas ideias?</em></h2><p className="mt-8 max-w-[440px] text-[15px] leading-7 text-dark-foreground/70">Entre em contato e descubra as possibilidades para o seu espaço.</p><Button variant="hero" size="editorial" asChild className="mt-9"><a href="tel:+553125524241">Ligar agora <ArrowUpRight /></a></Button></div><div className="border-t border-dark-foreground/25 pt-8 md:ml-auto md:w-full md:max-w-[350px]"><p className="mb-7 text-[10px] font-bold uppercase tracking-[.2em] text-gold">Onde estamos</p><a href="tel:+553125524241" className="mb-5 flex items-start gap-4 text-lg hover:text-gold"><Phone className="mt-1 size-5 shrink-0 text-gold" />(31) 2552-4241</a><a href="https://www.google.com/maps/search/?api=1&query=Rua+Jos%C3%A9+Rodrigues+Pereira+1192+Estoril+Belo+Horizonte+MG" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 text-[15px] leading-6 hover:text-gold"><MapPin className="mt-1 size-5 shrink-0 text-gold" />Rua José Rodrigues Pereira, 1192<br />Estoril · Belo Horizonte / MG</a></div></div></div></section>
+    <section id="contato" className="scroll-mt-12 bg-dark py-24 text-dark-foreground md:py-32"><div className="mx-auto max-w-[1480px] px-6 md:px-12 xl:px-20"><p className="mb-8 text-[11px] font-bold uppercase tracking-[.2em] text-gold">06 / Contato</p><div className="grid gap-12 md:grid-cols-[1.2fr_.8fr] md:items-end"><div><h2 className="font-display text-[clamp(54px,7vw,108px)] leading-[.92]">Vamos iluminar<br /><em className="font-normal text-gold">suas ideias?</em></h2><p className="mt-8 max-w-[440px] text-[15px] leading-7 text-dark-foreground/70">Entre em contato e descubra as possibilidades para o seu espaço.</p><Button variant="hero" size="editorial" asChild className="mt-9"><a href="tel:+553125524241">Ligar agora <ArrowUpRight /></a></Button></div><div className="border-t border-dark-foreground/25 pt-8 md:ml-auto md:w-full md:max-w-[350px]"><p className="mb-7 text-[10px] font-bold uppercase tracking-[.2em] text-gold">Onde estamos</p><a href="tel:+553125524241" className="mb-5 flex items-start gap-4 text-lg hover:text-gold"><Phone className="mt-1 size-5 shrink-0 text-gold" />(31) 2552-4241</a><a href="https://www.google.com/maps/search/?api=1&query=Rua+Jos%C3%A9+Rodrigues+Pereira+1192+Estoril+Belo+Horizonte+MG" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 text-[15px] leading-6 hover:text-gold"><MapPin className="mt-1 size-5 shrink-0 text-gold" />Rua José Rodrigues Pereira, 1192<br />Estoril · Belo Horizonte / MG</a></div></div></div></section>
     <footer className="border-t border-dark-foreground/15 bg-dark py-8 text-dark-foreground"><div className="mx-auto flex max-w-[1480px] flex-wrap items-center justify-between gap-7 px-6 md:px-12 xl:px-20"><Wordmark light /><span className="text-xs text-dark-foreground/55">© {new Date().getFullYear()} Ponto da Luz. Todos os direitos reservados.</span><a href="#inicio" className="text-xs font-semibold uppercase tracking-[.15em] hover:text-gold">Voltar ao topo ↑</a></div></footer>
     <Button variant="hero" asChild className="fixed bottom-5 right-5 z-50 size-14 rounded-full p-0 [&_svg]:!size-7 md:bottom-8 md:right-8">
       <a href="https://wa.me/553194493666" target="_blank" rel="noopener noreferrer" aria-label="Conversar com a Ponto da Luz pelo WhatsApp" title="Conversar pelo WhatsApp">
